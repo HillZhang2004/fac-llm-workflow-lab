@@ -1,0 +1,34 @@
+outline.json:
+  description: |
+    Produce a structured outline for the essay topic given in the
+    additional user instructions. The essay is a general-purpose
+    history essay, not tied to any particular subject.
+
+    Each supporting argument should be a single sentence that stands
+    on its own.
+  schema: |
+    {
+      "type": "object",
+      "properties": {
+        "section_title": {
+          "type": "string",
+          "description": "1-6 word English title"
+        },
+        "main_thesis": {
+          "type": "string",
+          "description": "1-3 sentence thesis statement"
+        },
+        "supporting_arguments": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 3,
+          "maxItems": 5
+        }
+      },
+      "required": [
+        "section_title",
+        "main_thesis",
+        "supporting_arguments"
+      ]
+    }
+  model: groq/llama-3.1-8b-instant
