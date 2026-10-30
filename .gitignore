@@ -1,1 +1,17 @@
+# fac execution logs and metadata
+.buildlog
+*.buildlog
+*.facjson
+
+# API credentials and local environment
+.env
+.env.*
+!.env.example
+.venv/
+
+# Python and macOS files
+__pycache__/
+*.pyc
+.DS_Store
+
 .fac.log

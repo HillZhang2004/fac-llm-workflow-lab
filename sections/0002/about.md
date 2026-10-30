@@ -1,0 +1,11 @@
+**Section 0002: National Identity as the Driving Force**
+
+National identity ignited Prussian ambitions at the Congress of Vienna in 1815 and intensified after the Napoleonic Wars. Otto von Bismarck, then Prussian minister‑president, marshaled this sentiment into a cohesive political project. In 1866 the Franco‑Prussian War demonstrated how nationalistic fervor could be directed by a single state actor. The Prussian army’s decisive victory at Königgrätz cemented the idea that a unified German nation could be forged through strategic military victories under a strong central authority.
+
+In Italy, nationalist sentiment erupted in the mid‑19th century as a response to foreign domination. Giuseppe Garibaldi’s expedition in 1860 across the Kingdom of the Two Sicilies showcased how popular enthusiasm could translate into military success. The triumph at Caprera and the subsequent surrender of the Bourbon king in 1861 fueled the dream of a single Italian state. The Italian people, inspired by figures such as Camillo Benso, Count of Cavour, rallied around a vision that transcended regional loyalties.
+
+Prussia’s approach to unification was inherently centralized and authoritarian. Bismarck used the Prussian bureaucracy, the Reichstag, and the military hierarchy to impose a unified legal and administrative framework across former independent states. The 1871 proclamation of the German Empire in Versailles demonstrated how a top‑down structure could consolidate diverse territories under a single monarch. The state’s institutions, from the Prussian police to the railways, reinforced a unified national identity through uniform policies and symbols.
+
+Italy, by contrast, relied on popular mobilisation to achieve unification. Masses in rural Tuscany and industrial Lombardy joined nationalist clubs, while volunteer militias under Garibaldi’s banner swelled the ranks of the Italian army. The 1867 plebiscite in the Veneto region, which was annexed after the Austro‑Italian War, reflected the will of ordinary citizens rather than a state‑driven agenda. The Italian unification narrative emphasised citizen participation, popular support, and the charisma of leaders like Cavour and Garibaldi to inspire collective action.
+
+German unification under Bismarck was a top‑down, authoritarian project, while Italian unification was a bottom‑up, popular movement.

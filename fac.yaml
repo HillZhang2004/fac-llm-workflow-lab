@@ -31,4 +31,45 @@ outline.json:
         "supporting_arguments"
       ]
     }
-  model: groq/llama-3.1-8b-instant
+  model: groq/openai/gpt-oss-20b
+
+sections/$SECTION/about.md:
+  description: |
+    Write one full section (3-5 paragraphs) of the essay.
+
+    The overall thesis of the essay is:
+    $MAIN_THESIS
+
+    The specific argument that THIS section must make is:
+    $ARGUMENT
+
+    Ground the argument in concrete historical detail.
+  model: groq/openai/gpt-oss-20b
+  dependencies:
+    - target: outline.json
+      include: false
+    - target: style_guide.md
+      in_fac.yaml: false
+  variables:
+    SECTION: |
+      jq -r '.supporting_arguments | keys[]' outline.json
+    ARGUMENT: |
+      jq -r ".supporting_arguments[$SECTION]" outline.json
+    MAIN_THESIS: |
+      jq -r '.main_thesis' outline.json
+
+final.md:
+  cmd: |
+    {
+      jq -r '"# " + .section_title' outline.json
+      echo
+      jq -r .main_thesis outline.json
+      for f in sections/*/about.md; do
+        echo
+        echo "## $f"
+        echo
+        cat "$f"
+      done
+    } > final.md
+  dependencies:
+    - sections/$SECTION/about.md
