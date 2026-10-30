@@ -1,0 +1,6 @@
+{
+    "REQ-RETENTION": {
+        "days": 30,
+        "delete_at_boundary": true
+    }
+}

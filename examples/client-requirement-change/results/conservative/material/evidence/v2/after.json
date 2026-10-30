@@ -1,0 +1,22 @@
+{
+  "client-summary.md": {
+    "mtime_ns": 1793397285797440273,
+    "sha256": "5d98c79a63891e863c0d4f00d5fb9c626436520e7472494c9106e974a88b3238"
+  },
+  "deployment-checklist.md": {
+    "mtime_ns": 1793397285672200291,
+    "sha256": "33bc5a49d7dde53049b702f3f1670d77c2a1d4a13b8eabf5c9e53d0d047f7325"
+  },
+  "retention-config.json": {
+    "mtime_ns": 1793397285735971026,
+    "sha256": "9c23466254f61cd355b5bba4816aef9429c5342db68c25cea18b2383f2f02f51"
+  },
+  "search-contract.json": {
+    "mtime_ns": 1793397285588350832,
+    "sha256": "d950389abe64f1fcf8a6afc020931240849258a39ce1261cfb52eb9124c549d9"
+  },
+  "test_retention.py": {
+    "mtime_ns": 1793397285851697519,
+    "sha256": "e8c46f154e2dedcce9fc52040d5ad71a44d8ce4f1f24389324b13fff132641f5"
+  }
+}

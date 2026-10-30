@@ -1,0 +1,71 @@
+{
+  "acceptance_failed": [],
+  "acceptance_passed": 5,
+  "acceptance_returncode": 0,
+  "acceptance_skipped": 1,
+  "byte_changed": [
+    "client-summary.md",
+    "deployment-checklist.md",
+    "retention-config.json",
+    "search-contract.json",
+    "test_retention.py"
+  ],
+  "commands": {
+    "acceptance": [
+      "/Users/hillll/fac-venv/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "addopts=",
+      "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+      "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/work/artifacts/test_retention.py",
+      "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/evidence/initial/acceptance.xml"
+    ],
+    "fac": [
+      "/Users/hillll/fac-venv/bin/python",
+      "-B",
+      "-m",
+      "fac",
+      "--no-auto_commit",
+      "--debug.halt_on_error",
+      "--max_workers",
+      "1",
+      "artifacts/retention-config.json",
+      "artifacts/test_retention.py",
+      "artifacts/deployment-checklist.md",
+      "artifacts/client-summary.md",
+      "artifacts/search-contract.json"
+    ]
+  },
+  "deliverable_rebuild_count": 5,
+  "expected_days": 30,
+  "expected_impacted": [
+    "client-summary.md",
+    "deployment-checklist.md",
+    "retention-config.json",
+    "search-contract.json",
+    "test_retention.py"
+  ],
+  "fac_returncode": 0,
+  "false_negatives": [],
+  "false_positives": [],
+  "mtime_changed": [
+    "client-summary.md",
+    "deployment-checklist.md",
+    "retention-config.json",
+    "search-contract.json",
+    "test_retention.py"
+  ],
+  "observed_rebuilt": [
+    "client-summary.md",
+    "deployment-checklist.md",
+    "retention-config.json",
+    "search-contract.json",
+    "test_retention.py"
+  ],
+  "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+  "stage": "initial",
+  "total_fac_build_count": 8
+}

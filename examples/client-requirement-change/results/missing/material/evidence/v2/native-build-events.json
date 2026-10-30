@@ -1,0 +1,38 @@
+[
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/record.json",
+    "time": "2026-10-30T21:55:03.011587+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/retention.json",
+    "time": "2026-10-30T21:55:03.604889+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/search.json",
+    "time": "2026-10-30T21:55:03.669129+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/retention-config.json",
+    "time": "2026-10-30T21:55:04.770334+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/test_retention.py",
+    "time": "2026-10-30T21:55:04.833246+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/client-summary.md",
+    "time": "2026-10-30T21:55:04.899337+00:00"
+  }
+]

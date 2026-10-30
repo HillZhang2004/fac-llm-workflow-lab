@@ -1,0 +1,13 @@
+{
+    "delete_at_boundary": true,
+    "provenance": {
+        "REQ-RETENTION": {
+            "sha256": "b33bf8a04c9cac0625faf209efe8f22313e06c1020dcf60c812f09a48507294e",
+            "value": {
+                "days": 7,
+                "delete_at_boundary": true
+            }
+        }
+    },
+    "retention_days": 7
+}

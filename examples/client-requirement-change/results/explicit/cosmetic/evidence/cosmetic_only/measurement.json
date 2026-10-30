@@ -1,0 +1,47 @@
+{
+  "acceptance_failed": [],
+  "acceptance_passed": 5,
+  "acceptance_returncode": 0,
+  "acceptance_skipped": 1,
+  "byte_changed": [],
+  "commands": {
+    "acceptance": [
+      "/Users/hillll/fac-venv/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "addopts=",
+      "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+      "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/cosmetic/work/artifacts/test_retention.py",
+      "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/cosmetic/evidence/cosmetic_only/acceptance.xml"
+    ],
+    "fac": [
+      "/Users/hillll/fac-venv/bin/python",
+      "-B",
+      "-m",
+      "fac",
+      "--no-auto_commit",
+      "--debug.halt_on_error",
+      "--max_workers",
+      "1",
+      "artifacts/retention-config.json",
+      "artifacts/test_retention.py",
+      "artifacts/deployment-checklist.md",
+      "artifacts/client-summary.md",
+      "artifacts/search-contract.json"
+    ]
+  },
+  "deliverable_rebuild_count": 0,
+  "expected_days": 30,
+  "expected_impacted": [],
+  "fac_returncode": 0,
+  "false_negatives": [],
+  "false_positives": [],
+  "mtime_changed": [],
+  "observed_rebuilt": [],
+  "source_sha256": "67a1adc9de3e37ffc8307168bb6534ddb389b10c3889fdb1cbd7a3d82a81c5b2",
+  "stage": "cosmetic_only",
+  "total_fac_build_count": 3
+}

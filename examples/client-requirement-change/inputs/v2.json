@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "message_id": "SYNTH-CR-001",
+  "channel": "synthetic-client-changes",
+  "display_name": "Cedar Demo.",
+  "text": "REQ-RETENTION: Retain conversation history for 7 days. Delete records at or beyond the retention boundary.\nREQ-SEARCH: Provide knowledge-base search with top_k=2.\nREQ-QUALITY: The top result for 'password reset' must be KB-RESET. Responses must cite the selected document and contain at most 40 words."
+}

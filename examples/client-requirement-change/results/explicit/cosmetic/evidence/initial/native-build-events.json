@@ -1,0 +1,50 @@
+[
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/record.json",
+    "time": "2026-10-30T21:54:29.088444+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/retention.json",
+    "time": "2026-10-30T21:54:29.388220+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "requirements/search.json",
+    "time": "2026-10-30T21:54:29.449036+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/retention-config.json",
+    "time": "2026-10-30T21:54:30.246042+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/client-summary.md",
+    "time": "2026-10-30T21:54:30.615754+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/search-contract.json",
+    "time": "2026-10-30T21:54:30.716680+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/deployment-checklist.md",
+    "time": "2026-10-30T21:54:30.800384+00:00"
+  },
+  {
+    "__fac_version__": "0.0.0-dev",
+    "build_id": "FIXME",
+    "path": "artifacts/test_retention.py",
+    "time": "2026-10-30T21:54:30.868526+00:00"
+  }
+]

@@ -1,0 +1,82 @@
+[38;5;208m[WARNING] git repo is dirty but proceeding with --allow_dirty[0m
+├── ['up-to-date'] workflow.py
+├── ['up-to-date'] input/baseline-message.json
+├── ['up-to-date'] mode.txt
+├── ['up-to-date'] input/client-message.json
+├── ['up-to-date'] requirements.schema.json
+├── ['out-of-date', 'changed:input/client-message.json', 'prompt-changed'] requirements/record.json
+│   context:
+│     normalized_target: requirements/record.json
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements.schema.json
+│       in_fac.yaml: false
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 1 context
+│   ├── built requirements/record.json
+├── ['out-of-date', 'changed:requirements/record.json', 'prompt-changed'] requirements/retention.json
+│   context:
+│     normalized_target: requirements/retention.json
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['out-of-date', 'changed:requirements/record.json', 'prompt-changed'] requirements/search.json
+│   context:
+│     normalized_target: requirements/search.json
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 2 contexts with max_workers=1
+│   ├── built requirements/retention.json
+│   ├── built requirements/search.json
+├── ['out-of-date', 'changed:requirements/search.json', 'prompt-same'] artifacts/search-contract.json
+├── ['out-of-date', 'changed:requirements/search.json', 'prompt-same'] artifacts/deployment-checklist.md
+├── ['out-of-date', 'changed:requirements/retention.json', 'prompt-changed'] artifacts/retention-config.json
+│   context:
+│     normalized_target: artifacts/retention-config.json
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['out-of-date', 'changed:requirements/retention.json', 'prompt-changed'] artifacts/test_retention.py
+│   context:
+│     normalized_target: artifacts/test_retention.py
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['out-of-date', 'changed:requirements/retention.json', 'prompt-changed'] artifacts/client-summary.md
+│   context:
+│     normalized_target: artifacts/client-summary.md
+│     dependencies_built:
+│     - target: input/baseline-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 3 contexts with max_workers=1
+│   ├── built artifacts/retention-config.json
+│   ├── built artifacts/test_retention.py
+│   ├── fixing markdown formatting in path=artifacts/client-summary.md
+│   ├── built artifacts/client-summary.md
+├── finalizing job 3
+├── finalizing job 1
+├── finalizing job 4
+├── finalizing job 0
+├── finalizing job 2

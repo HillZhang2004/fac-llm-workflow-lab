@@ -1,0 +1,12 @@
+{
+    "REQ-QUALITY": {
+        "citation_required": true,
+        "expected_top_id": "KB-RESET",
+        "max_response_words": 40,
+        "query": "password reset"
+    },
+    "REQ-SEARCH": {
+        "enabled": true,
+        "top_k": 2
+    }
+}
