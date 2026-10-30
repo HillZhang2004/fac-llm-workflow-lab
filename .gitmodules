@@ -1,0 +1,3 @@
+[submodule "examples/client-requirement-change/vendor/fac"]
+	path = examples/client-requirement-change/vendor/fac
+	url = https://github.com/mikeizbicki/fac.git

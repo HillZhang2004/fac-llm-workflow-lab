@@ -1,0 +1,25 @@
+{
+    "display_name": "Cedar Demo",
+    "requirements": {
+        "REQ-QUALITY": {
+            "citation_required": true,
+            "expected_top_id": "KB-RESET",
+            "max_response_words": 40,
+            "query": "password reset"
+        },
+        "REQ-RETENTION": {
+            "days": 30,
+            "delete_at_boundary": true
+        },
+        "REQ-SEARCH": {
+            "enabled": true,
+            "top_k": 2
+        }
+    },
+    "source": {
+        "message_id": "SYNTH-CR-001",
+        "path": "input/client-message.json",
+        "sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1"
+    },
+    "synthetic": true
+}

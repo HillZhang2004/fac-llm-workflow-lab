@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.fac.log
+results/**/.git/
+
+# This example intentionally publishes native provenance as experiment evidence.
+# Override the tutorial root's build-log and facjson ignore rules here only.
+!results/**/.buildlog
+!results/**/*.buildlog
+!results/**/*.facjson
+
+# Preserve the recorded run; keep later local experiment runs out of commits.
+/results-*/

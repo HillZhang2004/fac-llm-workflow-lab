@@ -1,0 +1,13 @@
+..F...                                                                   [100%]
+=================================== FAILURES ===================================
+________________________ test_checklist_matches_client _________________________
+
+    def test_checklist_matches_client():
+        text = artifact("deployment-checklist.md")
+>       assert f"retention to {EXPECTED_DAYS} days" in text
+E       AssertionError: assert 'retention to 7 days' in '# Synthetic deployment checklist\n\n- Set conversation history retention to 30 days.\n- Delete records at or beyond 3...orting requirement: REQ-RETENTION; value SHA256: `5854e491c17eba7de8551c65259d9017e58526d175b568b5c48e8bca3d21f345`.\n'
+
+../../../../acceptance.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED ../../../../acceptance.py::test_checklist_matches_client - AssertionEr...
+1 failed, 5 passed in 0.02s

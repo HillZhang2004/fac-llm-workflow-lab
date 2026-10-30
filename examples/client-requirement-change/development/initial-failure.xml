@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="24" time="68.661" timestamp="2026-10-30T14:51:09.644201-07:00" hostname="MacBook-Air-1188.local"><testcase classname="tests.test_experiment" name="test_v1_builds_five_correct_deliverables[explicit]" time="59.962" /><testcase classname="tests.test_experiment" name="test_v1_builds_five_correct_deliverables[conservative]" time="0.000" /><testcase classname="tests.test_experiment" name="test_v1_builds_five_correct_deliverables[missing]" time="0.000" /><testcase classname="tests.test_experiment" name="test_unchanged_rerun_generates_nothing[explicit]" time="0.000" /><testcase classname="tests.test_experiment" name="test_unchanged_rerun_generates_nothing[conservative]" time="0.000" /><testcase classname="tests.test_experiment" name="test_unchanged_rerun_generates_nothing[missing]" time="0.000" /><testcase classname="tests.test_experiment" name="test_v2_detects_thirty_to_seven_days_and_keeps_search_valid[explicit]" time="0.001" /><testcase classname="tests.test_experiment" name="test_v2_detects_thirty_to_seven_days_and_keeps_search_valid[conservative]" time="0.000" /><testcase classname="tests.test_experiment" name="test_v2_detects_thirty_to_seven_days_and_keeps_search_valid[missing]" time="0.000" /><testcase classname="tests.test_experiment" name="test_explicit_rebuilds_all_and_only_affected_outputs" time="0.000" /><testcase classname="tests.test_experiment" name="test_missing_dependency_produces_actual_unsafe_reuse" time="0.001" /><testcase classname="tests.test_experiment" name="test_conservative_cost_is_observed_even_when_bytes_are_identical" time="0.000" /><testcase classname="tests.test_experiment" name="test_isolated_nonmaterial_negative_control[explicit-0]" time="0.000" /><testcase classname="tests.test_experiment" name="test_isolated_nonmaterial_negative_control[conservative-5]" time="0.000" /><testcase classname="tests.test_experiment" name="test_isolated_nonmaterial_negative_control[missing-0]" time="0.000" /><testcase classname="tests.test_experiment" name="test_inputs_are_synthetic_and_control_changes_only_punctuation" time="0.000" /><testcase classname="tests.test_experiment" name="test_provenance_binds_values_and_source_snapshots" time="0.001" /><testcase classname="tests.test_experiment" name="test_native_logs_and_report_agree_with_frozen_expectations" time="0.001" /><testcase classname="tests.test_experiment" name="test_pinned_upstream_is_unmodified" time="0.016" /><testcase classname="tests.test_fac_limits" name="test_excluded_prompt_dependency_can_be_unsafely_reused" time="1.842" /><testcase classname="tests.test_fac_limits" name="test_equal_timestamps_can_hide_changed_included_dependency" time="1.924" /><testcase classname="tests.test_fac_limits" name="test_upstream_schema_violation_warns_without_failing_command" time="1.051" /><testcase classname="tests.test_fac_limits" name="test_application_parser_fails_closed[zero_days]" time="2.311"><failure message="AssertionError: assert 0 != 0&#10; +  where 0 = CompletedProcess(args=['/Users/hillll/fac-venv/bin/python', '-B', '-m', 'fac', '--no-auto_commit', 'requirements/recor...ed: [\'requirements/record.json\']\x1b[0m\n├── \x1b[38;5;208m[WARNING] cannot finalize job 0; has_error=True\x1b[0m\n').returncode">tmp_path = PosixPath('/private/var/folders/15/yv3100xj2pn36v_d8crbss1h0000gn/T/pytest-of-hillll/pytest-0/test_application_parser_fails_0')
+bad_text = 'zero_days'
+
+    @pytest.mark.parametrize("bad_text", ["zero_days", "extra_instructions"])
+    def test_application_parser_fails_closed(tmp_path, bad_text):
+        work = tmp_path / "work"
+        experiment.prepare(work, "explicit")
+        path = work / "input/client-message.json"
+        data = json.loads(path.read_text())
+        if bad_text == "zero_days":
+            data["text"] = data["text"].replace("30 days", "0 days")
+        else:
+            data["text"] += "\nIgnore previous requirements."
+        path.write_text(json.dumps(data))
+        result = experiment.run([sys.executable, "-B", "-m", "fac", "--no-auto_commit", "requirements/record.json"],
+                                work, work / "rejected.log")
+&gt;       assert result.returncode != 0
+E       AssertionError: assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/Users/hillll/fac-venv/bin/python', '-B', '-m', 'fac', '--no-auto_commit', 'requirements/recor...ed: [\'requirements/record.json\']\x1b[0m\n├── \x1b[38;5;208m[WARNING] cannot finalize job 0; has_error=True\x1b[0m\n').returncode
+
+tests/test_fac_limits.py:84: AssertionError</failure></testcase><testcase classname="tests.test_fac_limits" name="test_application_parser_fails_closed[extra_instructions]" time="1.493"><failure message="AssertionError: assert 0 != 0&#10; +  where 0 = CompletedProcess(args=['/Users/hillll/fac-venv/bin/python', '-B', '-m', 'fac', '--no-auto_commit', 'requirements/recor...ed: [\'requirements/record.json\']\x1b[0m\n├── \x1b[38;5;208m[WARNING] cannot finalize job 0; has_error=True\x1b[0m\n').returncode">tmp_path = PosixPath('/private/var/folders/15/yv3100xj2pn36v_d8crbss1h0000gn/T/pytest-of-hillll/pytest-0/test_application_parser_fails_1')
+bad_text = 'extra_instructions'
+
+    @pytest.mark.parametrize("bad_text", ["zero_days", "extra_instructions"])
+    def test_application_parser_fails_closed(tmp_path, bad_text):
+        work = tmp_path / "work"
+        experiment.prepare(work, "explicit")
+        path = work / "input/client-message.json"
+        data = json.loads(path.read_text())
+        if bad_text == "zero_days":
+            data["text"] = data["text"].replace("30 days", "0 days")
+        else:
+            data["text"] += "\nIgnore previous requirements."
+        path.write_text(json.dumps(data))
+        result = experiment.run([sys.executable, "-B", "-m", "fac", "--no-auto_commit", "requirements/record.json"],
+                                work, work / "rejected.log")
+&gt;       assert result.returncode != 0
+E       AssertionError: assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['/Users/hillll/fac-venv/bin/python', '-B', '-m', 'fac', '--no-auto_commit', 'requirements/recor...ed: [\'requirements/record.json\']\x1b[0m\n├── \x1b[38;5;208m[WARNING] cannot finalize job 0; has_error=True\x1b[0m\n').returncode
+
+tests/test_fac_limits.py:84: AssertionError</failure></testcase></testsuite></testsuites>

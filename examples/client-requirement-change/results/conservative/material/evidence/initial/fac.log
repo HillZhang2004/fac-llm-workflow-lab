@@ -1,0 +1,115 @@
+├── ['up-to-date'] workflow.py
+├── ['up-to-date'] mode.txt
+├── ['up-to-date'] input/client-message.json
+├── ['up-to-date'] input/baseline-message.json
+├── ['up-to-date'] requirements.schema.json
+├── ['new'] requirements/record.json
+│   context:
+│     normalized_target: requirements/record.json
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements.schema.json
+│       in_fac.yaml: false
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 1 context
+│   ├── built requirements/record.json
+├── ['new'] requirements/retention.json
+│   context:
+│     normalized_target: requirements/retention.json
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['new'] requirements/search.json
+│   context:
+│     normalized_target: requirements/search.json
+│     dependencies_built:
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 2 contexts with max_workers=1
+│   ├── built requirements/retention.json
+│   ├── built requirements/search.json
+├── ['new'] artifacts/client-summary.md
+│   context:
+│     normalized_target: artifacts/client-summary.md
+│     dependencies_built:
+│     - target: input/baseline-message.json
+│       in_fac.yaml: false
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['new'] artifacts/search-contract.json
+│   context:
+│     normalized_target: artifacts/search-contract.json
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: requirements/search.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['new'] artifacts/retention-config.json
+│   context:
+│     normalized_target: artifacts/retention-config.json
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['new'] artifacts/test_retention.py
+│   context:
+│     normalized_target: artifacts/test_retention.py
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── ['new'] artifacts/deployment-checklist.md
+│   context:
+│     normalized_target: artifacts/deployment-checklist.md
+│     dependencies_built:
+│     - target: input/client-message.json
+│       in_fac.yaml: false
+│     - target: mode.txt
+│       in_fac.yaml: false
+│     - target: requirements/record.json
+│     - target: requirements/retention.json
+│     - target: workflow.py
+│       in_fac.yaml: false
+├── building 5 contexts with max_workers=1
+│   ├── fixing markdown formatting in path=artifacts/client-summary.md
+│   ├── built artifacts/client-summary.md
+│   ├── built artifacts/search-contract.json
+│   ├── built artifacts/retention-config.json
+│   ├── built artifacts/test_retention.py
+│   ├── fixing markdown formatting in path=artifacts/deployment-checklist.md
+│   ├── built artifacts/deployment-checklist.md
+├── finalizing job 0
+├── finalizing job 3
+├── finalizing job 1
+├── finalizing job 2
+├── finalizing job 4

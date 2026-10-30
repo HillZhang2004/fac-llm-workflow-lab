@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["synthetic", "source", "display_name", "requirements"],
+  "properties": {
+    "synthetic": {"const": true},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "message_id"],
+      "properties": {
+        "path": {"const": "input/client-message.json"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "message_id": {"const": "SYNTH-CR-001"}
+      }
+    },
+    "display_name": {"type": "string", "minLength": 1},
+    "requirements": {
+      "type": "object", "additionalProperties": false,
+      "required": ["REQ-RETENTION", "REQ-SEARCH", "REQ-QUALITY"],
+      "properties": {
+        "REQ-RETENTION": {
+          "type": "object", "additionalProperties": false,
+          "required": ["days", "delete_at_boundary"],
+          "properties": {"days": {"type": "integer", "minimum": 1, "maximum": 365}, "delete_at_boundary": {"const": true}}
+        },
+        "REQ-SEARCH": {
+          "type": "object", "additionalProperties": false,
+          "required": ["enabled", "top_k"],
+          "properties": {"enabled": {"const": true}, "top_k": {"type": "integer", "minimum": 1, "maximum": 10}}
+        },
+        "REQ-QUALITY": {
+          "type": "object", "additionalProperties": false,
+          "required": ["query", "expected_top_id", "citation_required", "max_response_words"],
+          "properties": {
+            "query": {"type": "string", "minLength": 1}, "expected_top_id": {"type": "string", "minLength": 1},
+            "citation_required": {"const": true}, "max_response_words": {"type": "integer", "minimum": 1, "maximum": 200}
+          }
+        }
+      }
+    }
+  }
+}

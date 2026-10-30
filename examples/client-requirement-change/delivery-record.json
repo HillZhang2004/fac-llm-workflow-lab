@@ -1,0 +1,18 @@
+{
+  "experiment_command": "/Users/hillll/fac-venv/bin/python -B experiment.py",
+  "verification_command": "/Users/hillll/fac-venv/bin/python -B -m pytest -q --junitxml=verification.xml",
+  "outer_verification": {
+    "passed": 25,
+    "failed": 0,
+    "seconds": 69.74
+  },
+  "compatibility_verification": {
+    "passed": 6,
+    "failed": 0,
+    "seconds": 8.59
+  },
+  "direct_v2_rerun_additional_native_builds": 0,
+  "expected_impact_sha256": "a0ddb50d0f80412ab1f9c8719f4744958eb98399435b87566332dddbe53828c6",
+  "original_repository_actions": "Read only; no edits, pushes, API calls, or publication.",
+  "known_intentional_failure": "Missing dependency leaves a 30-day checklist; independent V2 checklist acceptance fails."
+}

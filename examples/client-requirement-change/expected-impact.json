@@ -1,0 +1,20 @@
+{
+  "specified_before_execution": true,
+  "unit": "five engineering deliverables, excluding parser/projection targets",
+  "rationale": {
+    "retention-config.json": "Implements REQ-RETENTION; must change from 30 to 7 days.",
+    "test_retention.py": "Encodes REQ-RETENTION; its expected day count must change.",
+    "deployment-checklist.md": "Tells operators the retention period; must change.",
+    "client-summary.md": "States the agreed retention period; must change.",
+    "search-contract.json": "Uses REQ-SEARCH and REQ-QUALITY only; retention and display punctuation are irrelevant."
+  },
+  "v2": ["retention-config.json", "test_retention.py", "deployment-checklist.md", "client-summary.md"],
+  "cosmetic_only": [],
+  "unchanged": [],
+  "initial": ["retention-config.json", "test_retention.py", "deployment-checklist.md", "client-summary.md", "search-contract.json"],
+  "predictions": {
+    "explicit": {"v2_rebuilds": 4, "cosmetic_only_rebuilds": 0, "unsafe_reuse": []},
+    "conservative": {"v2_rebuilds": 5, "cosmetic_only_rebuilds": 5, "unsafe_reuse": []},
+    "missing": {"v2_rebuilds": 3, "cosmetic_only_rebuilds": 0, "unsafe_reuse": ["deployment-checklist.md"]}
+  }
+}

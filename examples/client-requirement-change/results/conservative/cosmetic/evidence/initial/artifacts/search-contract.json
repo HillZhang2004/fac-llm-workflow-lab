@@ -1,0 +1,31 @@
+{
+    "provenance": {
+        "REQ-QUALITY": {
+            "sha256": "b5285689f66531ea645098a70948da0d09f41b6566f7505a1c33c17c230dc015",
+            "value": {
+                "citation_required": true,
+                "expected_top_id": "KB-RESET",
+                "max_response_words": 40,
+                "query": "password reset"
+            }
+        },
+        "REQ-SEARCH": {
+            "sha256": "24618c6b06fb618ed4bd2ce5d78ddf101528e414c851cce3f26758eeb739232c",
+            "value": {
+                "enabled": true,
+                "top_k": 2
+            }
+        }
+    },
+    "quality": {
+        "citation_required": true,
+        "expected_top_id": "KB-RESET",
+        "max_response_words": 40,
+        "query": "password reset"
+    },
+    "search": {
+        "enabled": true,
+        "top_k": 2
+    },
+    "synthetic": true
+}

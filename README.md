@@ -30,6 +30,12 @@ After modifying the style guide, the four sections were regenerated and the fina
 
 These experiments demonstrate workflow behavior in this example; they are not a comprehensive reliability evaluation.
 
+## Standalone examples
+
+- [Client requirement change impact](examples/client-requirement-change/): an offline, deterministic experiment using pinned `fac` to compare explicit dependencies, complete supplied context, and a deliberately missing dependency. Includes executable tests, generated artifacts, an impact report, and a three-minute demo script.
+
+The standalone example has its own `fac.yaml` and setup instructions; the essay tutorial above continues to run from the repository root.
+
 ## Limitations
 
 The generated historical essay is illustrative and has not been fact-checked. Successful execution and structural validation do not guarantee factual correctness.

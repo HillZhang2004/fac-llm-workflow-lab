@@ -1,0 +1,19 @@
+[38;5;208m[WARNING] git repo is dirty but proceeding with --allow_dirty[0m
+├── ['up-to-date'] workflow.py
+├── ['up-to-date'] input/baseline-message.json
+├── ['up-to-date'] input/client-message.json
+├── ['up-to-date'] mode.txt
+├── ['up-to-date'] requirements.schema.json
+├── ['up-to-date'] requirements/record.json
+├── ['up-to-date'] requirements/search.json
+├── ['up-to-date'] requirements/retention.json
+├── ['up-to-date'] artifacts/retention-config.json
+├── ['up-to-date'] artifacts/deployment-checklist.md
+├── ['up-to-date'] artifacts/client-summary.md
+├── ['up-to-date'] artifacts/test_retention.py
+├── ['up-to-date'] artifacts/search-contract.json
+├── finalizing job 4
+├── finalizing job 1
+├── finalizing job 0
+├── finalizing job 3
+├── finalizing job 2

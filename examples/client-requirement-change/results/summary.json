@@ -1,0 +1,737 @@
+{
+  "expected_impact_sha256": "a0ddb50d0f80412ab1f9c8719f4744958eb98399435b87566332dddbe53828c6",
+  "modes": {
+    "conservative": {
+      "cosmetic_only": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/cosmetic/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/cosmetic/evidence/cosmetic_only/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 5,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "67a1adc9de3e37ffc8307168bb6534ddb389b10c3889fdb1cbd7a3d82a81c5b2",
+        "stage": "cosmetic_only",
+        "total_fac_build_count": 8
+      },
+      "initial": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/evidence/initial/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 5,
+        "expected_days": 30,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "initial",
+        "total_fac_build_count": 8
+      },
+      "unchanged": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/evidence/unchanged/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 0,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [],
+        "observed_rebuilt": [],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "unchanged",
+        "total_fac_build_count": 0
+      },
+      "v2": {
+        "acceptance_failed": [],
+        "acceptance_passed": 6,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 0,
+        "byte_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/conservative/material/evidence/v2/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 5,
+        "expected_days": 7,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [
+          "search-contract.json"
+        ],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "9d57b52d81b10f38413529456943595cf9048cfceaeb5b15573c5994b629edc3",
+        "stage": "v2",
+        "total_fac_build_count": 8
+      }
+    },
+    "explicit": {
+      "cosmetic_only": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/cosmetic/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/cosmetic/evidence/cosmetic_only/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 0,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [],
+        "observed_rebuilt": [],
+        "source_sha256": "67a1adc9de3e37ffc8307168bb6534ddb389b10c3889fdb1cbd7a3d82a81c5b2",
+        "stage": "cosmetic_only",
+        "total_fac_build_count": 3
+      },
+      "initial": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/evidence/initial/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 5,
+        "expected_days": 30,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "initial",
+        "total_fac_build_count": 8
+      },
+      "unchanged": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/evidence/unchanged/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 0,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [],
+        "observed_rebuilt": [],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "unchanged",
+        "total_fac_build_count": 0
+      },
+      "v2": {
+        "acceptance_failed": [],
+        "acceptance_passed": 6,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 0,
+        "byte_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/explicit/material/evidence/v2/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 4,
+        "expected_days": 7,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "9d57b52d81b10f38413529456943595cf9048cfceaeb5b15573c5994b629edc3",
+        "stage": "v2",
+        "total_fac_build_count": 7
+      }
+    },
+    "missing": {
+      "cosmetic_only": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/cosmetic/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/cosmetic/evidence/cosmetic_only/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 0,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [],
+        "observed_rebuilt": [],
+        "source_sha256": "67a1adc9de3e37ffc8307168bb6534ddb389b10c3889fdb1cbd7a3d82a81c5b2",
+        "stage": "cosmetic_only",
+        "total_fac_build_count": 3
+      },
+      "initial": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/evidence/initial/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 5,
+        "expected_days": 30,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "search-contract.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "initial",
+        "total_fac_build_count": 8
+      },
+      "unchanged": {
+        "acceptance_failed": [],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 0,
+        "acceptance_skipped": 1,
+        "byte_changed": [],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/evidence/unchanged/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 0,
+        "expected_days": 30,
+        "expected_impacted": [],
+        "fac_returncode": 0,
+        "false_negatives": [],
+        "false_positives": [],
+        "mtime_changed": [],
+        "observed_rebuilt": [],
+        "source_sha256": "0db8abd61ba88c1a330ac902a43a595ee306f76c0865f944235f67b90fb040a1",
+        "stage": "unchanged",
+        "total_fac_build_count": 0
+      },
+      "v2": {
+        "acceptance_failed": [
+          "test_checklist_matches_client"
+        ],
+        "acceptance_passed": 5,
+        "acceptance_returncode": 1,
+        "acceptance_skipped": 0,
+        "byte_changed": [
+          "client-summary.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "commands": {
+          "acceptance": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-o",
+            "addopts=",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/acceptance.py",
+            "/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/work/artifacts/test_retention.py",
+            "--junitxml=/Users/hillll/Documents/ChatGPT/Mike Thesis/examples/client-requirement-change/results/missing/material/evidence/v2/acceptance.xml"
+          ],
+          "fac": [
+            "/Users/hillll/fac-venv/bin/python",
+            "-B",
+            "-m",
+            "fac",
+            "--no-auto_commit",
+            "--debug.halt_on_error",
+            "--max_workers",
+            "1",
+            "artifacts/retention-config.json",
+            "artifacts/test_retention.py",
+            "artifacts/deployment-checklist.md",
+            "artifacts/client-summary.md",
+            "artifacts/search-contract.json"
+          ]
+        },
+        "deliverable_rebuild_count": 3,
+        "expected_days": 7,
+        "expected_impacted": [
+          "client-summary.md",
+          "deployment-checklist.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "fac_returncode": 0,
+        "false_negatives": [
+          "deployment-checklist.md"
+        ],
+        "false_positives": [],
+        "mtime_changed": [
+          "client-summary.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "observed_rebuilt": [
+          "client-summary.md",
+          "retention-config.json",
+          "test_retention.py"
+        ],
+        "source_sha256": "9d57b52d81b10f38413529456943595cf9048cfceaeb5b15573c5994b629edc3",
+        "stage": "v2",
+        "total_fac_build_count": 6
+      }
+    }
+  },
+  "pytest_version": "9.1.1",
+  "python_version": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "upstream": {
+    "commit": "2a099e6e97db390fa578a33edf9f66d61aec5818",
+    "manifest_sha256": "40fd72712ea721d7dc154a2c51b084ef7061bb806f09f43e303685bd58eee884",
+    "tracked_files_verified": 76
+  }
+}

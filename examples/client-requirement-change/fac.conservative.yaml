@@ -1,0 +1,86 @@
+# Actual fac command targets; dependency content participates in prompt hashing.
+requirements/record.json:
+  cmd: '"$PYTHON" -B workflow.py parse'
+  schema_file: requirements.schema.json
+  dependencies:
+  - target: input/client-message.json
+    in_fac.yaml: false
+  - target: requirements.schema.json
+    in_fac.yaml: false
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+requirements/retention.json:
+  cmd: '"$PYTHON" -B workflow.py project retention'
+  dependencies:
+  - requirements/record.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+requirements/search.json:
+  cmd: '"$PYTHON" -B workflow.py project search'
+  dependencies:
+  - requirements/record.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+artifacts/retention-config.json:
+  cmd: '"$PYTHON" -B workflow.py generate'
+  dependencies:
+  - requirements/retention.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+  - requirements/record.json
+  - target: input/client-message.json
+    in_fac.yaml: false
+artifacts/test_retention.py:
+  cmd: '"$PYTHON" -B workflow.py generate'
+  dependencies:
+  - requirements/retention.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+  - requirements/record.json
+  - target: input/client-message.json
+    in_fac.yaml: false
+artifacts/deployment-checklist.md:
+  cmd: '"$PYTHON" -B workflow.py generate'
+  dependencies:
+  - requirements/retention.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+  - requirements/record.json
+  - target: input/client-message.json
+    in_fac.yaml: false
+artifacts/client-summary.md:
+  cmd: '"$PYTHON" -B workflow.py generate'
+  dependencies:
+  - requirements/retention.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+  - requirements/record.json
+  - target: input/client-message.json
+    in_fac.yaml: false
+  - target: input/baseline-message.json
+    in_fac.yaml: false
+artifacts/search-contract.json:
+  cmd: '"$PYTHON" -B workflow.py generate'
+  dependencies:
+  - requirements/search.json
+  - target: workflow.py
+    in_fac.yaml: false
+  - target: mode.txt
+    in_fac.yaml: false
+  - requirements/record.json
+  - target: input/client-message.json
+    in_fac.yaml: false
